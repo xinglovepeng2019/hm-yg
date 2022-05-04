@@ -1,0 +1,94 @@
+{
+  "pages": [{
+    "path": "pages/index/index",
+    "style": {
+      "navigationBarTitleText": "首页"
+    }
+  }, {
+    "path": "pages/cate/cate",
+    "style": {
+      "navigationBarTitleText": "分类",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/cart/cart",
+    "style": {
+      "navigationBarTitleText": "购物车",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/my/my",
+    "style": {
+      "navigationBarTitleText": "我的",
+      "enablePullDownRefresh": false
+    }
+
+  }],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+      "path": "goods_detail/goods_detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "goods_list/goods_list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#f8f8f8",
+        "onReachBottomDistance": 60
+      }
+    }, {
+      "path": "search/search",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }]
+  }],
+  "tabBar": {
+    "selectedColor": "#c00000",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/tab_icons/home.png",
+        "selectedIconPath": "./static/tab_icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "分类",
+        "iconPath": "./static/tab_icons/cate.png",
+        "selectedIconPath": "./static/tab_icons/cate-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./static/tab_icons/cart.png",
+        "selectedIconPath": "./static/tab_icons/cart-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./static/tab_icons/my.png",
+        "selectedIconPath": "./static/tab_icons/my-active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商城",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    },
+    "usingComponents": {
+      "van-button": "/wxcomponents/vant/dist/button/index"
+    }
+  }
+}
